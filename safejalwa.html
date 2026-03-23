@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saif Jalwa Landing Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #FFFFFF; /* Dark background */
+            font-family: 'Arial', sans-serif;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: #0b0f19; /* Slightly lighter inner background */
+            width: 100%;
+            max-width: 400px;
+            padding: 40px 20px;
+            border-radius: 20px;
+            text-align: center;
+            position: relative;
+            
+            /* Animated Border glow */
+            border: 3px solid #00ff66;
+            animation: borderPulse 2s infinite alternate;
+        }
+
+        /* Border Glow Animation */
+        @keyframes borderPulse {
+            0% {
+                border-color: #00ff66;
+                box-shadow: 0 0 15px #00ff66, inset 0 0 10px #00ff66;
+            }
+            100% {
+                border-color: #00ffff;
+                box-shadow: 0 0 30px #00ffff, inset 0 0 20px #00ffff;
+            }
+        }
+
+        /* Profile Picture */
+        .profile-pic {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            margin: 0 auto 20px auto;
+            border: 3px solid #00ffff;
+            box-shadow: 0 0 10px #00ffff;
+            
+            /* Yaha apni image ka link lagaye background-image me, ya HTML img tag use kare */
+            background-image: url('https://i.ibb.co/b5Y5sX91/IMG-20260323-WA0014.jpg'); /* Placeholder image */
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* Titles */
+        .main-title {
+            font-family: 'Times New Roman', serif;
+            font-size: 26px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            margin-bottom: 25px;
+        }
+
+        /* Stats List */
+        .stats {
+            text-align: left;
+            display: inline-block;
+            margin-bottom: 30px;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 2;
+        }
+
+        .stats span {
+            margin-right: 10px;
+            font-size: 16px;
+        }
+
+        /* Button */
+        .telegram-btn {
+            display: block;
+            background: linear-gradient(90deg, #ffcc00, #ff9900);
+            color: #000;
+            text-decoration: none;
+            padding: 15px;
+            border-radius: 12px;
+            font-weight: bold;
+            font-size: 18px;
+            box-shadow: 0 0 20px rgba(255, 153, 0, 0.4);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin-bottom: 30px;
+        }
+
+        .telegram-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 30px rgba(255, 153, 0, 0.7);
+        }
+
+        /* Footer Text */
+        .footer-text {
+            font-family: 'Times New Roman', serif;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        /* Hurry Up Text Animation */
+        .hurry-up {
+            color: #00ff66;
+            font-size: 28px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            animation: textPulse 1.5s infinite alternate;
+        }
+
+        @keyframes textPulse {
+            0% { text-shadow: 0 0 5px #00ff66; }
+            100% { text-shadow: 0 0 25px #00ff66; transform: scale(1.02); }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="profile-pic"></div>
+
+        <h1 class="main-title">🔥 VICKY BOSS 🔥</h1>
+
+        <div class="stats">
+            <div><span>🌈</span> 98% SIGNAL ACCURACY</div>
+            <div><span>📊</span> 10K+ ACTIVE MEMBERS</div>
+            <div><span>⚡</span> DAILY COLOUR UPDATES</div>
+        </div>
+
+        <a href="https://t.me/+AleMdBAf8qRiZDM1" class="telegram-btn" target="_blank">
+            🚀 JOIN TELEGRAM CHANNEL
+        </a>
+
+        <div class="footer-text">
+            VICKY BOSS<br>
+            INDIA'S ACTIVE PLAYERS<br>
+            COMMUNITY 🚀
+        </div>
+
+        <div class="hurry-up">HURRRY UP !!</div>
+    </div>
+
+</body>
+</html>
